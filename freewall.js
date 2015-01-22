@@ -391,7 +391,8 @@
             if (!$.isNumeric(height)) {
                 // adjust cell height via cell width;
                 cellH < 1 && (cellH = runtime.cellW);
-                runtime.cellH = cellH != 1 ? cellH * runtime.cellS : 1;
+                // runtime.cellH = cellH != 1 ? cellH * runtime.cellS : 1;
+                runtime.cellH = cellH;
                 runtime.gutterY = gutterY;
                 runtime.limitRow = 666666;
             }
